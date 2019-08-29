@@ -16,14 +16,14 @@ int main() {
     for (i = 0; i < filas; ++i) {
         for (j = 0; j < columnas ; ++j) {
             printf("Ingrese un numero");
-            scanf("%d",matriz[i][j]);
+            scanf("%d",&matriz[i][j]);
         }
     }
 
     printf("¿Que desea sumar?\nPresione 1 para filas o 2 para columnas");
     scanf("%d",&desicion);
     if (desicion==1){
-        printf("¿Que fila desea sumar\n?");
+        printf("¿Que fila desea sumar?\n");
         scanf("%d",&posicionSumar);
         for ( j = 0; j < columnas; ++j) {
             suma = suma + matriz[posicionSumar][j];
